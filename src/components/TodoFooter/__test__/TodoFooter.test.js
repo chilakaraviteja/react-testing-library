@@ -32,6 +32,15 @@ describe("TodoFooter", () => {
     const pElement = screen.getByText(/1 task left/i);
     expect(pElement).toBeInTheDocument();
   });
+  it('should render correct text content', () => {
+  render(
+      <MockTodoFooter 
+        numberOfIncompleteTasks={1}
+      />
+  );
+  const pElement = screen.getByText(/1 task left/i);
+  expect(pElement.textContent).toBe("1 task left");
+});
 })
 
 // it('p element should be truthy when the number of incomplete tasks is one', () => {
@@ -84,12 +93,3 @@ describe("TodoFooter", () => {
 //   expect(pElement).not.toBeFalsy();
 // });
 
-// it('should render correct text content', () => {
-//   render(
-//       <MockTodoFooter 
-//         numberOfIncompleteTasks={1}
-//       />
-//   );
-//   const pElement = screen.getByText(/1 task left/i);
-//   expect(pElement.textContent).toBe("1 task left");
-// });
