@@ -3,14 +3,14 @@ const mockResponse = {
         results: [
             {
                 name: {
-                    first: "Laith",
-                    last: "Harb"
+                    first: "Ravi",
+                    last: "Teja"
                 },
                 picture: {
                     large: "https://randomuser.me/api/portraits/men/59.jpg"
                 },
                 login: {
-                    username: "ThePhonyGOAT"
+                    username: "ravitejaC"
                 }
             }
         ]
